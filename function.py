@@ -1,6 +1,6 @@
 class PendudukThanos:
 
-  def __init__(self, banyak_hari = 0):
+  def __init__(self, banyak_hari = 1):
     self.banyak_hari = banyak_hari
     self.penduduk = 1
 
@@ -13,7 +13,7 @@ class PendudukThanos:
     return penduduk
 
   def hari_berjalan(self):
-    if self.banyak_hari < 0:
+    if self.banyak_hari < 1:
         raise Exception("Error banyak hari tidak valid!")
     for hari in range(1, self.banyak_hari + 1, 1):
       if hari == 1:
